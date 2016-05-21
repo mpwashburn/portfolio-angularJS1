@@ -1,16 +1,30 @@
 {
-  "name": "test",
+  "name": "portfolio-angular",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "Peronal website and portfolio for Michael Washburn",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpwashburn/portfolio-angularJS1.git"
+  },
+  "author": "Michael Washburn",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpwashburn/portfolio-angularJS1/issues"
+  },
+  "homepage": "https://github.com/mpwashburn/portfolio-angularJS1#readme",
   "dependencies": {
+    "angular": "^1.5.5",
     "angular-animate": "^1.5.5",
     "angular-aria": "^1.5.5",
-    "angular-material": "^1.0.8"
+    "angular-material": "^1.0.8",
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.4.17",
+    "morgan": "^1.7.0"
   }
 }
