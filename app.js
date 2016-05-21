@@ -1,1 +1,9 @@
-angular.module('MwPortfolio',[ngMaterial]);
+(function(){
+  'use strict';
+
+angular.module('portfolio', ['ngMaterial'])
+  .run(function(){
+    console.log('Test is running');
+  });
+
+})();
