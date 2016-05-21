@@ -1,9 +1,187 @@
-#c1 {
- background-color: #6bc7cc;
+body{
+padding-bottom: 200px;
+background: white;
 }
-#c2 {
-  background-color : tan;
+
+/*makes image fill the content width of the containing element*/
+.img-responsive{
+  width: 100%;
+  height: auto;
 }
-div{
-  border: blue 2px solid;
+
+.navbar-brand{
+  font-size: 36px;
+  color: white !important;
+}
+.subhead{
+  font-size: 26px;
+}
+
+#mynav{
+  margin-bottom: 0;
+  background: rgb(53, 115, 198);
+  border: 0!important;
+  border-radius: 0;
+  color: white !important;
+}
+
+.nav li, a {
+  color: white !important;
+}
+.jumbo {
+    min-height: 100vh;
+    background: url(img/bkgrnd_nature-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#jumbo-text {
+  padding: 3%;
+  background: rgba(240, 48, 56, 0.85);
+  color: white;
+  margin-top: 10%;
+}
+
+.page-break {
+  background: red;
+  margin-bottom: 1%;
+}
+
+.page-break h1 {
+  margin: 0;
+  padding: 1%;
+  color: black;
+}
+
+.card {
+  border: 3px solid rgb(113, 16, 30);
+  position: relative;
+  margin-bottom: 10px
+}
+
+.card .content {
+    position:absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+
+    color: white;
+}
+/*all images in an anchor tag when hovered over within the card class will change opacity*/
+.card a:hover img{
+  opacity: .8;
+}
+
+.card-content {
+  padding: 10px;
+  background: white;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  width: 100%;
+  min-height: 290px;
+}
+
+.card-content p, .card-content h3 {
+  margin: 0;
+}
+
+.card-content h2 {
+  margin-top: 0;
+}
+
+.card a{}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-content {
+  min-height: 105px;
+}
+
+.social {
+  position: fixed;
+  left: 0;
+  top: 50vh;
+}
+
+.social a{
+  display: block;
+  background: teal;
+  color: white;
+  padding: 5px;
+}
+
+.social .fa{
+  font-size: 200%;
+  padding: 15px;
+}
+
+.social a:nth-child(2) {
+  background: #007bb5;
+}
+
+.social a:first-child{
+  background: black;
+}
+/****************Single.php**********************/
+.post .row {
+  margin-top: 20px;
+}
+
+.post .card p {
+  margin: 10px 10px  10px 10px;
+}
+
+.post .card-content h3 h4 {
+  min-height: 215px;
+  padding-left: 10px;
+}
+.card-content h2, h3, h4{
+  padding-left: 10px
+}
+
+.post-content {
+  margin-bottom: 15%;
+}
+
+.post-content img {
+  width: 100%;
+  height: auto;
+}
+
+.sidebar {
+  min-height: 615px;
+}
+/*********************Footer*****************************/
+.footer {
+  margin-top: 50px;
+  background: rgb(53, 115, 198);
+  height: 50px;
+  /*positon fixed keeps footer at bottom of page*/
+  position:fixed;
+  /*bottom and left act as margin*/
+  bottom: 0;
+  left: 0;
+  /*width tells the footer to push to full size of display*/
+  width: 100%;
+  z-index: 2;
+  color: white;
+}
+
+#contact-title {
+  text-align: center;
+}
+#copyright {
+  text-align: left;
+}
+
+/***********index.php***********/
+
+.archive {
+  margin-top: 1%;
 }
