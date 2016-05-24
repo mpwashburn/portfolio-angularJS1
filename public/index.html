@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="portfolio" ng-cloak>
+<html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +7,13 @@
   <!-- <link rel="stylesheet" href="node_modules/angular-material/angular-material.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
-<body>
+<body ng-app="portfolio" ng-cloak>
 <nav id="mynav" class="navbar navbar-default" role=navigation>
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="<?php bloginfo('wpurl') ?>">Michael Washburn</a>
+      <a class="navbar-brand" href="">Michael Washburn</a>
       </div><!-- navbar-header -->
       <div class="collapse navbar-collapse" id="collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -45,7 +45,6 @@
   </div>
   </div>
 </section>
-<section></section>
 <section class="page-break">
 <div class="container">
   <div class="row">
@@ -56,19 +55,8 @@
   </div>
 </section>
 
-<div class="projects container">
-  <div class="row">
-    <section class="col-md-6">
-      <div class="card">
-        <div class="img-bg">
-        {{project.thumbnail}}
-        </div>
-        <div class="content">
-          <h2>{{projec title}}</h2>
-          <h3>{{project tags}}</h3>
-        </div>
-      </div>
-    </section>
+<div class="projects container" ui-view>
+</div>
 
 <div class="social">
   <a href="https://github.com/mpwashburn?tab=repositories" target="'newwindow'"> <i class="fa fa-github"></i></a>
@@ -86,19 +74,12 @@
   </div>
 </footer>
 
-
-
-
-
-
-
   <script src="vendors/jquery-2.2.4.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
-  <!-- <script src="node_modules/angular-animate/angular-animate.js"></script>
-  <script src="node_modules/angular-aria/angular-aria.js"></script>
-  <script src="node_modules/angular-material/angular-material.js"></script> -->
-  <script src="js/project-controller.js" type="text/javascript"></script>
-  <script src="app.js" type="text/javascript"></script>
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="js/app.js" type="text/javascript"></script>
+  <script src="js/project-config.js"></script>
+  <script src="js/project-controller.js"></script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+<!-- PROJECTS INDEX.HTML -->
+<div class="row">
+    <section class="col-md-6" ng-repeat="project in vm.projects">
+      <div class="card">
+        <div class="img-bg">
+        <img ng-src="{{project.imageUrl}}">
+        </div>
+        <div class="content">
+          <h2>{{project.title}}</h2>
+          <h3>{{project.languages}}</h3>
+          <h4>{{project.description}}</h4>
+        </div>
+      </div>
+    </section>
+  </div>
