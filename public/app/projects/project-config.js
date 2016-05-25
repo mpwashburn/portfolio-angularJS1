@@ -1,16 +1,16 @@
 (function(){
   'use strict';
 
-angular.module('portfolio'['ui.router'])
+angular.module('portfolio.projects')
 .config(config);
 
 function config($stateProvider, $urlRouterProvider) {
         $stateProvider
-            .state('portfolio.projects', {
+            .state('projects', {
                 url: '/projects',
                 controller: 'ProjectCtrl',
                 controllerAs: 'vm',
-                templateUrl: 'public/views/pages/projects/index.html'
+                templateUrl: './app/projects/project.index.html'
           })
     };
 
