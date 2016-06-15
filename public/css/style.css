@@ -1,3 +1,9 @@
+/*palette
+#2D3138 -background
+#A1A9C4 - fonts / borders
+#2F71D1 - maybe links (blue)
+*/
+
 body{
 padding-bottom: 200px;
 background: white;
@@ -17,9 +23,9 @@ background: white;
   font-size: 26px;
 }
 
-#mynav{
+.navbar{
   margin-bottom: 0;
-  background: rgb(53, 115, 198);
+  background: rgb(45,49,56);
   border: 0!important;
   border-radius: 0;
   color: white !important;
@@ -38,20 +44,44 @@ background: white;
 
 #jumbo-text {
   padding: 3%;
-  background: rgba(240, 48, 56, 0.85);
+  background: #2D3138;
   color: white;
   margin-top: 10%;
 }
 
+#jumbo-text p {
+  font-size: 24px;
+  /*font-family: 'Kanit';*/
+  letter-spacing: 1px;
+}
+
+#jumbo-text h1 {
+  font-size: 42px;
+}
+
+#icon_container {
+
+  padding-right: 40px
+}
+
+.icons {
+  max-height: 75px;
+  padding: 5px;
+}
+
 .page-break {
-  background: red;
+  background: rgba(45,49,56,0.755);
   margin-bottom: 1%;
 }
 
 .page-break h1 {
   margin: 0;
   padding: 1%;
-  color: black;
+  color: white;
+}
+
+.about .contact p {
+  font-size: 24px;
 }
 
 .card {
@@ -157,10 +187,14 @@ background: white;
 .sidebar {
   min-height: 615px;
 }
+
+form, input, textarea, button {
+  border-radius: 0 !important;
+}
 /*********************Footer*****************************/
 .footer {
   margin-top: 50px;
-  background: rgb(53, 115, 198);
+  background: rgb(45,49,56);
   height: 50px;
   /*positon fixed keeps footer at bottom of page*/
   position:fixed;
@@ -178,6 +212,7 @@ background: white;
 }
 #copyright {
   text-align: left;
+  padding-top: 27px;
 }
 
 /***********index.php***********/

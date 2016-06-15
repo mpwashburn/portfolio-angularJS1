@@ -7,14 +7,14 @@ angular.module('portfolio', [])
     $scope.projects = [
     {
     id: 0,
-    imageUrl:'img/Everest_Game_SS.jpg',
+    imageUrl:'img/more_to_come.jpg',
     title: 'Everest Trivia',
     languages: 'HTML | CSS | Javascript',
     description: 'Simple trivia project completed in week 4'
   },
   {
     id: 1,
-    imageUrl:'img/TTT.jpg',
+    imageUrl:'img/more_to_come.jpg',
     title: 'Tic Tac Toe',
     languages: 'HTML | CSS | Javascript',
     description: 'Tic Tac Toe project completed in week 1'

@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Portfolio</title>
   <!-- <link rel="stylesheet" href="node_modules/angular-material/angular-material.css"> -->
+  <link href='https://fonts.googleapis.com/css?family=Kanit:700|Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css"/>
@@ -16,23 +17,39 @@
       <a class="navbar-brand" href="">Michael Washburn</a>
       </div><!-- navbar-header -->
       <div class="collapse navbar-collapse" id="collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="">Home</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
+        <!-- <ul class="nav navbar-nav navbar-right"> -->
+          <!-- <li><a href="">Home</a></li> -->
+          <!-- <li><a href="">Projects</a></li> -->
+          <!-- <li><a href="">Contact</a></li> -->
+        <!-- </ul> -->
       </div><!-- collapse navbar-collapse-->
   </div>
 </nav>
 <section class="jumbo">
-
   <div class="row">
     <div class="col-md-offset-5 col-md-7">
       <div id="jumbo-text">
-        <h1>Web Developer</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sunt excepturi architecto atque inventore hic a natus quisquam culpa molestiae temporibus officia quidem autem porro debitis cum, expedita pariatur quis.</p>
+        <div class="row">
+          <div class="col-md-5">
+            <div>
+            <h1>Web Developer</h1>
+            </div>
+          </div>
+          <div class="col-md=7 text-right">
+            <div id="icon_container">
+            <img src="../img/angular.png" class="icons">
+            <img src="../img/nodejs.png" class="icons">
+            <img src="../img/expressjs.png" class="icons">
+            <img src="../img/bootstrap.png" class="icons">
+            </div>
+          </div>
+        </div>
+        <div>
+        <hr>
+        <p class="text-left">New guy on the tech block with experience building in the M.E.A.N stack development. Currently, I am advancing my front-end skills in AngluarJS 1 and Bootstrap 3.</p>
       </div>
     </div>
+  </div>
   </div>
 </section>
 <section class="page-break">
@@ -47,7 +64,7 @@
 <div class="about container">
   <div class="row">
     <div class="col-md-12 text-center">
-      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod laborum laboriosam, temporibus autem praesentium voluptatum quo accusantium sint totam. Optio, expedita sit. Explicabo eos saepe voluptates, ut, deleniti unde nostrum!</p>
+      <p> I’m a web developer that recently finished my studies through General Assembly’s Web Development Immersive program. Although I have experience with back-end development with NodeJS and Rails, I am excited to be enhancing my front-end skills in AngularJS. I am currently seeking to take on small scale freelance work, or to fill a position as a junior web developer for a company either as a full-time employee, or contract work. Please feel free to contact me below with any questions you may have.</p>
     </div>
   </div>
 </div>
@@ -65,15 +82,53 @@
     <section class="col-md-6" ng-repeat="project in projects">
       <div class="card">
         <div class="img-bg">
-        <img ng-src="{{project.imageUrl}}">
+        <img class="img-responsive" ng-src="{{project.imageUrl}}">
         </div>
         <div class="content">
-          <h2>{{project.title}}</h2>
+          <!-- <h2>{{project.title}}</h2> -->
         </div>
       </div>
     </section>
   </div>
 </div>
+<section class="page-break">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1>Contact</h1>
+    </div>
+  </div>
+</div>
+</section>
+<div class="contact container">
+<div class="row">
+<div class="col-md-6">
+  <h2>Email:</h2>
+  <p>Michael@MichaelWashburn.co</p>
+  <h2>Phone</h2>
+  <p>323-422-5001</p>
+</div>
+<!-- <form>
+    <div class="col-md-offset-2 col-md-8">
+    <h2>Contact me!</h2>
+    <div class="form-group">
+      <label for="name">Your name</label>
+      <input type="text" class="form-control" id="name" placeholder="Name">
+    </div>
+    <div class="form-group">
+      <label for="email">Your email</label>
+      <input type="email" class="form-control" id="email" placeholder="Email">
+    </div>
+    <div class="form-group">
+      <label for="text">Message</label>
+      <textarea class="form-control" rows="5" placeholder="Compose a beauiful message here..."></textarea>
+    </div>
+      <button type="submit" class="btn btn-default">Send</button>
+    </div>
+  </form> -->
+  </div>
+  </div>
+
 
 <div class="social">
   <a href="https://github.com/mpwashburn?tab=repositories" target="'newwindow'"> <i class="fa fa-github"></i></a>
